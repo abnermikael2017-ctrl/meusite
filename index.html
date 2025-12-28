@@ -6,17 +6,17 @@
   <title>Comprivende</title>
 </head>
 <body>
-  <form name="contact" method="POST" data-netlify="true" action="obrigado.html">
-    <input type="hidden" name="form-name" value="contact" />
-    <h2>Formulário</h2>
-    <input type="text" name="produto" placeholder="Nome do produto" required>
-    <input type="text" name="contacto" placeholder="Contacto do utente" required>
-    <select name="tipo" required>
-      <option value="">Escolhe...</option>
-      <option value="vender">Vender</option>
-      <option value="comprar">Comprar</option>
-    </select>
-    <button type="submit">Enviar</button>
-  </form>
+ 
+<form name="contact" method="POST" data-netlify="true" action="https://comprivende.netlify.app/obrigado.html">
+  <input type="hidden" name="form-name" value="contact" />
+  <label>Nome: <input type="text" name="nome" required /></label><br>
+  <label>Email: <input type="email" name="email" required /></label><br>
+  <label>Mensagem: <textarea name="mensagem"></textarea></label><br>
+  <button type="submit">Enviar</button>
+</form>
+ 
+
 </body>
 </html>
+
+
