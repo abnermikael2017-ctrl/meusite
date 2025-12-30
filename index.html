@@ -3,22 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comprivende</title>
+  <title>Loja Fixe</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
-<form name="contact" method="POST" data-netlify="true" action="https://comprivende.netlify.app/obrigado.html"
-
-  <input type="hidden" name="form-name" value="contact" />
-  <label>Nome: <input type="text" name="nome" required /></label><br>
-  <label>Email: <input type="email" name="email" required /></label><br>
-  <label>Mensagem: <textarea name="mensagem"></textarea></label><br>
-  <button type="submit">Enviar</button>
-</form>
- 
-
+  <header>
+    <div class="logo">Loja Fixe</div>
+    <nav>
+      <ul>
+        <li><a href="#">Roupa</a></li>
+        <li><a href="#">Tech</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Loja Fixe</h1>
+    <p>Roupa e tech *top*</p>
+  </section>
+  <section class="produtos">
+    <div class="produto">
+      <img src="produto1.jpg" alt="Produto 1">
+      <h2>Produto 1</h2>
+      <p>€20</p>
+    </div>
+    <div class="produto">
+      <img src="produto2.jpg" alt="Produto 2">
+      <h2>Produto 2</h2>
+      <p>€30</p>
+    </div>
+    <div class="produto">
+      <img src="produto3.jpg" alt="Produto 3">
+      <h2>Produto 3</h2>
+      <p>€40</p>
+    </div>
+  </section>
+  <section class="formulario">
+    <form name="contacto" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contacto" />
+      <h2>Formulário</h2>
+      <select name="tipo" required>
+        <option value="">Escolhe...</option>
+        <option value="vender">Vender</option>
+        <option value="comprar">Comprar</option>
+      </select>
+      <input type="text" name="produto" placeholder="Nome do produto" required>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <div class="contacto-opcoes">
+        <label>Como quer ser contactado:</label>
+        <div>
+          <a href="https://wa.me/SEUNUMERO" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>© LojaFixe 2023</p>
+  </footer>
 </body>
 </html>
-
-
-
